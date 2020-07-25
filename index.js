@@ -160,11 +160,10 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
  * [2] Invoking `lowerCaseStrings` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
 function lowerCaseStrings(strings) {
-  let lowerCase = [];
-  strings.forEach((string) => {
-    lowerCase.push(string.toLowerCase());
+  let newlowerCase = [];
+  strings.forEach((newstring) => {newlowerCase.push(newstring.toLowerCase());
   });
-  return lowerCase;
+  return newlowerCase;
   
   
  
@@ -324,11 +323,11 @@ function tallyUpDonations(/* CODE HERE */) {
  * Study the code for counter1 and counter2. Answer the questions below.
  * 
  * 1. What is the difference between counter1 and counter2?
- * 
+ *  Counter1 has a function within it and counter2 does not.
  * 2. Which of the two uses a closure? How can you tell?
- * 
+ *  Counter1 is a closure because it has a function within it
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
- *
+ *  Counter1 would be preferable if you needed to create a function from another one and retain previous data. Counter2 would be better if you didnt need want to reuse previous information.
 */
 
 // counter1 code
